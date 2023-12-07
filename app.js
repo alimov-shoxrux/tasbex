@@ -1,7 +1,7 @@
 const elSelect = document.getElementById('select')
 const elBtn = document.getElementById('counter')
 const elText = document.getElementById('zikr')
-const elCount = document.getElementById('count')
+// const elCount = document.getElementById('count')
 
 elSelect.addEventListener('change', function () {
     elText.textContent = elSelect.value;
