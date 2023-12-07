@@ -1,20 +1,20 @@
 const elSelect = document.getElementById('select')
 const elBtn = document.getElementById('counter')
 const elText = document.getElementById('zikr')
-// const elCount = document.getElementById('count')
+let elCountch = document.getElementById('count')
 
 elSelect.addEventListener('change', function () {
     elText.textContent = elSelect.value;
     elBtn.disabled = false;
-    elCount.textContent = 0
+    elCountch.textContent = 0
 });
 
 elBtn.addEventListener('click', function () {
-    elCount.textContent = + elCount.textContent + 1
+    elCountch.textContent = + elCount.textContent + 1
 });
 
 elResetBtn.addEventListener('click', function () {
-    elCount.textContent = 0;
+    elCountch.textContent = 0;
     elText.textContent = "Iltimos waytmoqchi bo'lgan zikrni tanlang :)";
     elBtn.disabled = true;
     elSelect.value = "Zikrni tanlang";
