@@ -2,6 +2,7 @@ const elSelect = document.getElementById('select')
 const elBtn = document.getElementById('counter')
 const elText = document.getElementById('zikr')
 let elCount = document.getElementById('count')
+const elResetBtn = document.getElementById('reset')
 
 elSelect.addEventListener('change', function () {
     elText.textContent = elSelect.value;
